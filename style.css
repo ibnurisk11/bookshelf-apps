@@ -1,0 +1,389 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+input,
+button {
+  font-family: "Open Sans", sans-serif;
+}
+
+input,
+button {
+  font-size: 16px;
+}
+
+/* CSS untuk Header */
+.head_bar {
+  background-color: #379777; /* Warna dari palet */
+  color: white;
+  padding: 12px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.head_bar__container {
+  max-width: 800px;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.head_bar__title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.head_bar_sub_title {
+  margin: 0;
+  font-size: 14px;
+}
+
+main {
+  max-width: 800px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 16px;
+  background-color: #f5f7f8; /* Warna dari palet */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.input_section {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  border: 1px solid #45474b; /* Warna dari palet */
+  border-radius: 10px;
+  background-color: white;
+  margin-top: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.input_section > h2 {
+  text-align: center;
+  color: #379777; /* Warna dari palet */
+}
+
+.input_section > form > .input {
+  margin: 8px 0;
+}
+
+.input_section > form > button {
+  background-color: #379777; /* Warna dari palet */
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.input_section > form > button > span {
+  font-weight: bold;
+}
+
+.input_section > form > .input > input {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #45474b; /* Warna dari palet */
+  border-radius: 5px;
+}
+
+.input_section > form > .input > label {
+  color: #379777; /* Warna dari palet */
+  font-weight: bold;
+}
+
+.input_section > form > .input_inline {
+  margin: 12px 0;
+  display: flex;
+  align-items: center;
+}
+
+.input_section > form > .input_inline > label {
+  color: #379777; /* Warna dari palet */
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.search_section {
+  margin: 16px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  border: 1px solid #45474b; /* Warna dari palet */
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search_section > h2 {
+  color: #379777; /* Warna dari palet */
+}
+
+.search_section > form {
+  padding: 16px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto 1fr 0.5fr;
+  grid-gap: 10px;
+}
+
+.search_section > form > label {
+  display: flex;
+  align-items: center;
+}
+
+.search_section > form > input {
+  padding: 5px;
+  border: 1px solid #45474b; /* Warna dari palet */
+  border-radius: 5px;
+}
+
+.search_section > form > button {
+  background-color: #379777; /* Warna dari palet */
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.book_shelf {
+  margin: 16px 0 0 0;
+  border: 1px solid #45474b; /* Warna dari palet */
+  padding: 16px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.book_shelf > h2 {
+  color: #379777; /* Warna dari palet */
+}
+
+.book_shelf > .book_list {
+  padding: 16px;
+}
+
+.book_shelf > .book_list > .book_item {
+  padding: 8px 16px 16px 16px;
+  border: 1px solid #45474b; /* Warna dari palet */
+  border-radius: 5px;
+  margin: 10px 0;
+  background-color: #f5f7f8; /* Warna dari palet */
+}
+
+.book_shelf > .book_list > .book_item > h3,
+p {
+  margin: 8px 0;
+}
+
+.book_shelf > .book_list > .book_item > .action > button {
+  border: 0;
+  padding: 5px;
+  margin: 0 5px 0 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.book_shelf > .book_list > .book_item > .action > .green {
+  background-color: #379777; /* Warna dari palet */
+  color: white;
+}
+
+.book_shelf > .book_list > .book_item > .action > .red {
+  background-color: #f4ce14; /* Warna dari palet */
+  color: white;
+}
+
+/* CSS Tambahan untuk Aplikasi Bookshelf */
+
+/* Styling umum */
+body {
+  background-color: #f5f7f8;
+  font-family: "Open Sans", sans-serif;
+}
+
+input,
+button,
+textarea {
+  font-size: 16px;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* Header */
+.head_bar {
+  background-color: #379777;
+  color: white;
+  padding: 12px;
+  text-align: center;
+}
+
+/* Main */
+main {
+  max-width: 800px;
+  width: 90%;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Input Section */
+.input_section {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.input_section h2 {
+  color: #45474b;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.input_section form > .input {
+  margin-bottom: 15px;
+}
+
+.input_section form > button {
+  background-color: #379777;
+  color: white;
+  width: 100%;
+  padding: 10px;
+  border: 0;
+  border-radius: 5px;
+}
+
+.input_section form > button > span {
+  font-weight: bold;
+}
+
+/* Search Section */
+.search_section {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.search_section h2 {
+  color: #45474b;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.search_section form {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 10px;
+}
+
+.search_section form > button {
+  background-color: #379777;
+  color: white;
+  padding: 10px;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Book Shelf */
+.book_shelf {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.book_shelf h2 {
+  color: #45474b;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.book_shelf .book_list {
+  padding: 10px;
+}
+
+.book_shelf .book_item {
+  background-color: #f5f7f8;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.book_shelf .book_item h3,
+.book_shelf .book_item p {
+  margin-bottom: 5px;
+}
+
+.book_shelf .book_item .action {
+  margin-top: 10px;
+}
+
+.book_shelf .book_item .action button {
+  padding: 5px 10px;
+  margin-right: 5px;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.book_shelf .book_item .action .blue {
+  background-color: #379777;
+  color: white;
+}
+
+.book_shelf .book_item .action .red {
+  background-color: #d9534f;
+  color: white;
+}
+
+/* CSS untuk Footer */
+
+footer {
+  background-color: #45474b;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+footer a {
+  color: #f4ce14;
+  text-decoration: none;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
